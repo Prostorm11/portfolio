@@ -18,7 +18,17 @@ export default function Home() {
           </div>
         </div>
         <div className="socials">
-          <p>Hello</p>
+          <p className="social_text">Socials</p>
+          <div className="social_list_box">
+            <ul className="social_list">
+              <li>Gmail: <a href="www.google.com" target="blank">marfoofficial111@gmail.com</a></li> 
+              <li>LinkedIn</li> 
+              <li>GitHub</li> 
+              <li>Resume</li> 
+
+            </ul>
+          </div>
+         
         </div>
       </div>
       <div className="r2"></div>
