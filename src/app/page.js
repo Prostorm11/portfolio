@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="title">Portfolio</h1>
           <div className="skills">
             <p className="skill_typography">Machine Learning Engineer</p>
-            <p className="skill_typography">Data Scientist</p>
+            <p className="skill_typography">Data Scientists</p>
             <p className="skill_typography">Mobile App Developer</p>
           </div>
         </div>
@@ -31,7 +31,14 @@ export default function Home() {
          
         </div>
       </div>
-      <div className="r2"></div>
+      <div className="r2">
+        <div className="Ido">
+
+        </div>
+        <div className="Navigation">
+
+        </div>
+      </div>
     </div>
   );
 }
