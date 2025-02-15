@@ -4,7 +4,19 @@ export default function Projects({name} ){
     console.log({name});
     return (
         <div className={name}>
-            <div className="Pcontents"></div>
+            <div className="Pcontents">
+                <div className="Nav">
+                <div className="navigate_button">
+              <p>Models</p>
+            </div>
+            <div className="navigate_button">
+              <p>Mobile App</p>
+            </div>
+            <div className="navigate_button">
+              <p>AI Powered App</p>
+            </div>
+                </div>
+            </div>
         </div>
     )
         

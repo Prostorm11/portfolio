@@ -72,20 +72,10 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="Content">
-            <div className="navigate_button">
-              <p>Models</p>
-            </div>
-            <div className="navigate_button">
-              <p>Mobile App</p>
-            </div>
-            <div className="navigate_button">
-              <p>AI Powered App</p>
-            </div>
-          </div>
+          
         </div>
       </div>
-     {/*  <Projects name={`projectbox ${over?"move":""}`}></Projects> */}
+      <Projects name={`projectbox ${over?"move":""}`}></Projects>
     </div>
   );
 }
