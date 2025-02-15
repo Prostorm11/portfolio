@@ -1,8 +1,28 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import "./my.css";
 import Projects from "./display_projects";
+import { useEffect, useState } from "react";
 export default function Home() {
+  const[over,setover]=useState(false);
+
+  useEffect(()=>{
+    console.log(`${window.scrollY} ${window.innerHeight}`)
+    function handlescroll(){
+        if(window.scrollY>50){
+          console.log("yeah")
+          setover(true);
+        }else{
+          setover(false);
+        }
+    }
+    window.addEventListener("scroll",handlescroll);
+    return()=>{
+
+      window.removeEventListener("scroll",handlescroll)
+    }
+  },[])
   return (
     <div className="board">
       <div className="Main">
@@ -47,7 +67,7 @@ export default function Home() {
             <p>Making AI Accessible To All Through Mobile Apps</p>
             <div className="grouptext">
               <p>
-                Harnessing The Power Of Data Sciene To Gather Bussiness Insights
+                Harnessing The Power Of Data To Gather Bussiness Insights
                 And Trends
               </p>
             </div>
@@ -65,7 +85,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Projects></Projects>
+     {/*  <Projects name={`projectbox ${over?"move":""}`}></Projects> */}
     </div>
   );
 }
