@@ -10,7 +10,7 @@ export default function Projects({name} ){
               <p>Models</p>
             </div>
             <div className="navigate_button">
-              <p>Mobile App</p>
+              <p>Mobile Apps</p>
             </div>
             <div className="navigate_button">
               <p>AI Powered App</p>
