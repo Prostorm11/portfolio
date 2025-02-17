@@ -6,12 +6,14 @@ import Projects from "./display_projects";
 import { useEffect, useState } from "react";
 export default function Home() {
   const[over,setover]=useState(false);
+  const[below_scocial,setbelow]=useState(false)
 
   useEffect(()=>{
-    console.log(`${window.scrollY} ${window.innerHeight}`)
     function handlescroll(){
-        if(window.scrollY>50){
+      let scrollInVh = (window.scrollY / window.innerHeight) * 100;
+        if(scrollInVh>9.1){
           console.log("yeah")
+          console.log(scrollInVh)
           setover(true);
         }else{
           setover(false);
