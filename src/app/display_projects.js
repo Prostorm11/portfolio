@@ -16,8 +16,13 @@ export default function Projects({ name, show_socials }) {
             <p>AI Powered App</p>
           </div>
         </div>
+        <div className="skill_project">
+          <div className="tools"></div>
+          <div className="categorybox">
+            
+          </div>
+        </div>
       </div>
-     
     </div>
   );
 }
