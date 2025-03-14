@@ -9,14 +9,13 @@
     grid-template-columns: repeat(5,1fr);
     row-gap: 5px;
     box-sizing: border-box;
-    position: absolute;
-    top: 92vh;
+   /*  position: absolute;
+    top: 92vh; */
     width: 100%;
     max-width: 100vw;
     padding-right: 30px;
-    padding-left: 50px;
     background-color:#038C73;
-    transition: top 1s ease-in-out;
+    /* transition: top 1s ease-in-out; */
     
     
     
@@ -48,6 +47,9 @@
     justify-content: space-around;
     position: sticky;
     top: 0;
+    pointer-events: none;
+    z-index: 999;
+    background-color: #03A64A;
    
 }
 .navigate_button{
@@ -59,26 +61,29 @@
     justify-content: center;
     align-items: center;
     padding: 1px 16px 1px 16px;
+
 }
-.skill_project{
+.projects{
     display: flex;
     flex-direction: row;
     height: 100%;
     justify-content: space-between;
     padding: 40px 40px 10px 10px;
+    transition: clip-path 0.3s ease;
 }
-.tools{
+.skillBox{
     height: 300px;
     width: 22%;
     background-color: #014034;
     position: sticky;
     top:80px;
-    
 }
-.categorybox{
+.project_content{
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: red;
     width: 76%;
     
 }
+
